@@ -1,13 +1,88 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+.bg-rgba-white {
+  background: rgba(255, 255, 255, 0.5);
+}
+.bg-rgba-blue {
+  background: rgba(59, 130, 246, 0.4);
+}
+.ant-modal-content {
+  height: 90vh !important;
+  padding: 0 !important;
+  border-radius: 5px !important;
+  /* overflow: hidden; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-modal-body {
+  height: 100%;
+}
+.ant-modal-footer {
+  display: none !important;
+}
+.swiper {
+  height: 100%;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+}
+.component-height {
+  height: calc(100vh - 120px);
+}
+.audio-modal {
+  width: 100%;
+}
+.progress-indicator {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #f56565;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  transition: left 0.1s linear; /* Thêm transition để có hiệu ứng chuyển động */
+}
+.range-slider {
+  height: 4px !important;
+}
+.single-thumb .range-slider__thumb[data-upper] {
+  width: 18px !important;
+  height: 18px !important;
+}
+.single-thumb .range-slider__thumb[data-lower] {
+  width: 0;
+}
+.single-thumb .range-slider__range {
+  border-radius: 6px;
+}
+/* custom-slider.css */
+.custom-slider {
+  width: 100%;
+  height: 10px;
+  background-color: lightgray;
+  position: relative;
+}
+
+.custom-slider .bar {
+  height: 100%;
+  background-color: green;
+}
+
+.custom-slider .thumb {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid gray;
+  position: absolute;
 }
