@@ -30,7 +30,7 @@ export const fetchSingleTour = (dispatch, id) => {
     dispatch({ type: FETCH_SINGLE_TOUR_BEGIN });
     // console.log("@@@tours", tours);
     const singleTour = tours.find((tour) => {
-      console.log("@@@tour.id", tour.id);
+      // console.log("@@@tour.id", tour.id);
       return tour.id === id;
     });
     if (singleTour) {

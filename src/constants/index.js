@@ -39,7 +39,7 @@ export const languages = [
 
 export const tours = [
   {
-    id: "notre",
+    id: "notre_1",
     name: "Notre-Dame De Paris",
     img: notre,
     images: [
@@ -125,7 +125,7 @@ export const tours = [
     ],
   },
   {
-    id: "effiel",
+    id: "effiel_1",
     name: "Effiel Tower",
     img: effiel,
     images: [
@@ -211,7 +211,7 @@ export const tours = [
     desc: "Eiffel Tower, French Tour Eiffel, Parisian landmark that is also a technological masterpiece in building-construction history. ",
   },
   {
-    id: "seine",
+    id: "seine_1",
     name: "Seine River",
     img: seine,
     images: [
@@ -297,7 +297,7 @@ export const tours = [
     desc: "Seine River, river of France, after the Loire its longest. It rises 18 miles (30 kilometres) northwest of Dijon and flows in a northwesterly direction through Paris before emptying into the English Channel at Le Havre.",
   },
   {
-    id: "effiel",
+    id: "effiel_2",
     name: "Effiel Tower",
     img: effiel,
     images: [
@@ -383,7 +383,7 @@ export const tours = [
     desc: "Eiffel Tower, French Tour Eiffel, Parisian landmark that is also a technological masterpiece in building-construction history. When the French government was organizing the International Exposition of 1889 to celebrate the centenary of the French Revolution, a competition was held for designs for a suitable monument. More than 100 plans were submitted, and the Centennial Committee accepted that of the noted bridge engineer Gustave Eiffel.",
   },
   {
-    id: "notre",
+    id: "notre_2",
     name: "Notre-Dame De Paris",
     img: notre,
     images: [

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const SelectLanguages = () => {
   return (
     <div className="mx-0 w-full h-screen flex flex-col">
-      <h2 className="bg-blue-500 h-[60px] flex items-center justify-center text-white font-bold text-md">
+      <h2 className="bg-primary h-[60px] flex items-center justify-center text-white font-bold text-xl">
         Select a language
       </h2>
       <div className="bg-rgba-white h-full pt-20">

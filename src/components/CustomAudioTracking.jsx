@@ -25,16 +25,20 @@ const CustomAudioTracking = ({ src, transcript, image }) => {
 
   useEffect(() => {
     const updateCurrentTime = () => {
-      const time = audioRef.current.currentTime;
-      setCurrentTime(time);
+      if (audioRef.current) {
+        const time = audioRef.current.currentTime;
+        setCurrentTime(time);
+      }
     };
 
     // Update the slider value
 
     const setInitialDuration = () => {
-      const videoDuration = audioRef.current.duration;
-      setDuration(videoDuration);
-      sliderRef.current.max = videoDuration;
+      if (audioRef.current) {
+        const videoDuration = audioRef.current.duration;
+        setDuration(videoDuration);
+        sliderRef.current.max = videoDuration;
+      }
     };
 
     audioRef.current.addEventListener("timeupdate", updateCurrentTime);

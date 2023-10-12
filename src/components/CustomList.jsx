@@ -7,7 +7,7 @@ const CustomList = ({ img, lists, openModal }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 60) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -23,8 +23,8 @@ const CustomList = ({ img, lists, openModal }) => {
         <img
           src={img}
           alt=""
-          className={`${
-            scrolled ? "hidden" : "w-full object-cover opacity-30 "
+          className={` w-full object-cover opacity-30 ${
+            scrolled ? "sticky top" : ""
           }`}
         />
         <ul

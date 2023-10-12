@@ -13,7 +13,7 @@ const AudioPage = () => {
   useEffect(() => {
     fetchSingleAudio(dispatch, audioId);
   }, [audioId]);
-  console.log("@@@singleAudio", singleAudio);
+  // console.log("@@@singleAudio", singleAudio);
 
   return (
     <div className="flex flex-col mx-auto max-w-lg min-h-screen ">
@@ -22,9 +22,9 @@ const AudioPage = () => {
       </div>
       <div className="flex flex-col grow h-full">
         <CustomAudioTracking
-          src={singleAudio.src}
-          transcript={singleAudio.scripts}
-          image={singleAudio.thumb}
+          src={singleAudio?.src}
+          transcript={singleAudio?.scripts}
+          image={singleAudio?.thumb}
         />
       </div>
     </div>

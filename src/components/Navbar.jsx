@@ -8,7 +8,7 @@ const Navbar = ({ title }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 60) {
+      if (scrollTop > 100) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -26,18 +26,14 @@ const Navbar = ({ title }) => {
 
   return (
     <div
-      className={`w-full h-[60px] ${
-        scrolled
-          ? "sticky top-0 z-2000 bg-rgba-blue w-full transition-all duration-300 ease-in-out delay-150"
-          : ""
-      } z-20 flex items-center justify-between px-4 bg-blue-600 transform translate-y-0 ${
-        scrolled && "translate-y-0"
-      }`}
+      className={`w-full h-[60px] z-20 flex items-center justify-between px-4 bg-primary ${
+        scrolled ? "sticky top-0 bg-rgba-blue w-full bg-rgba-blue" : ""
+      } `}
     >
       <button type="button" onClick={() => goBack()}>
         <IoArrowBackOutline className="text-white text-2xl" />
       </button>
-      <h5 className="text-white font-black text-xl tracking-wide capitalize">
+      <h5 className="text-white font-bold text-xl tracking-wide capitalize">
         {title}
       </h5>
       <div className="text-white text-xl">
