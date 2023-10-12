@@ -1,29 +1,36 @@
 import React, { useEffect, useState } from "react";
+
 import {
   AudioModal,
   CustomAudio,
   CustomKeyboard,
   CustomList,
   IntroductionModal,
+  Loading,
   MapComponent,
   Navbar,
   Tabs,
 } from "../components";
-import audio from "../assets/audio/Thuận Theo Ý Trời - Bùi Anh Tuấn - Cover Hay Nhất Việt Nam - Master of Flute(1).mp3";
+
 import { useTourContext } from "../context/tourContext";
 import { useParams } from "react-router-dom";
 import { fetchSingleTour, fetchAudio } from "../actions/tourAction";
 import { tabs } from "../constants";
 
 const SingleTourDetailPage = () => {
+  const [loading, setLoading] = useState(true);
   const { id } = useParams();
   const { singleTour, dispatch, audio } = useTourContext();
   const [openIntroModal, setOpenIntroModal] = useState(false);
   const [activeTab, setActiveTab] = useState("map");
 
+  setTimeout(() => {
+    setLoading(false);
+  }, 2000);
+
   useEffect(() => {
     setTimeout(() => {
-      // setOpenIntroModal(true);
+      setOpenIntroModal(true);
     }, 1000);
   }, []);
 
@@ -47,22 +54,26 @@ const SingleTourDetailPage = () => {
   return (
     <div className="flex flex-col max-w-lg mx-auto w-screen min-h-screen">
       <Navbar title={activeTab} />
-      <div className="flex-1">
-        {activeTab === "map" ? (
-          <MapComponent tour={singleTour} />
-        ) : activeTab === "list" ? (
-          <CustomList img={singleTour.img} lists={audio} />
-        ) : (
-          <CustomKeyboard />
-        )}
-        <div>
-          <Tabs
-            tabs={tabs}
-            activeTab={activeTab}
-            onTabChange={handleTabChange}
-          />
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className="flex-1">
+          {activeTab === "map" ? (
+            <MapComponent tour={singleTour} />
+          ) : activeTab === "list" ? (
+            <CustomList img={singleTour.img} lists={audio} />
+          ) : (
+            <CustomKeyboard />
+          )}
+          <div>
+            <Tabs
+              tabs={tabs}
+              activeTab={activeTab}
+              onTabChange={handleTabChange}
+            />
+          </div>
         </div>
-      </div>
+      )}
       <div>
         {openIntroModal && (
           <IntroductionModal
