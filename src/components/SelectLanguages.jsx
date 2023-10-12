@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { languages } from "../constants";
 import { Link } from "react-router-dom";
 const SelectLanguages = () => {
@@ -9,10 +10,22 @@ const SelectLanguages = () => {
       </h2>
       <div className="bg-rgba-white h-full pt-20">
         <ul className="list-none flex flex-col gap-5 ">
-          {languages.map((language) => {
+          {languages.map((language, index) => {
+            const animationVariants = {
+              hidden: { opacity: 0, x: -100 },
+              visible: { opacity: 1, x: 0 },
+            };
             return (
-              <li
+              <motion.li
                 key={language.id}
+                variants={animationVariants}
+                initial="hidden"
+                animate="visible"
+                transition={{
+                  ease: "easeOut",
+                  duration: 0.5,
+                  delay: index * 0.2,
+                }}
                 className="bg-rgba-blue px-10 py-4 text-white text-md font-bold flex items-center gap-5"
               >
                 <img
@@ -21,7 +34,7 @@ const SelectLanguages = () => {
                   className="w-9 h-9"
                 />
                 <Link to="/tours">{language.lang}</Link>
-              </li>
+              </motion.li>
             );
           })}
         </ul>

@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTourContext } from "../context/tourContext";
-import { Navbar, Tours } from "../components";
+import { Loading, Navbar, Tours } from "../components";
 
 const TourPage = () => {
+  const [loading, setLoading] = useState(true);
   const { tours } = useTourContext();
-
+  setTimeout(() => {
+    setLoading(false);
+  }, 2500);
   return (
     <div className="max-w-lg mx-auto w-screen">
       <Navbar title="Select a tour" />
-      <Tours tours={tours} />
+      {loading ? <Loading /> : <Tours tours={tours} />}
     </div>
   );
 };
