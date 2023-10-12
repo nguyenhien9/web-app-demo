@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 const CustomKeyboard = () => {
   return (
-    <div className="flex flex-col justify-between component-height bg-[#0090FF] h-full">
+    <div className="flex flex-col justify-between component-height blue-gradient h-full">
       <div className="text-white text-center py-2 text-sm">
         Enter the keycode of the content you want to see
       </div>

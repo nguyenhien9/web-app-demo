@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SingleTab from "./SingleTab";
 
 const Tabs = ({ tabs, activeTab, onTabChange }) => {
   return (
     <>
-      <ul className="bg-blue-600 w-full h-[60px] flex items-center justify-between ">
+      <ul className="bg-primary w-full h-[60px] flex items-center justify-between ">
         {tabs.map((tab) => {
           return (
             <li
