@@ -13,6 +13,7 @@ module.exports = {
       },
       backgroundImage: {
         "launch-page": "url('/src/assets/paris.jpg')",
+        sidebar: "url('/src/assets/bgIMG.png')",
       },
     },
   },

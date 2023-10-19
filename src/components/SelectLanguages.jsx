@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { languages } from "../constants";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 const SelectLanguages = () => {
+  const { t } = useTranslation();
+  console.log("@@@t", t);
   return (
     <div className="mx-0 w-full h-screen flex flex-col">
       <h2 className="bg-primary h-[60px] flex items-center justify-center text-white font-bold text-xl">

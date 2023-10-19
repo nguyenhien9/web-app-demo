@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
-
 import { IoArrowBackOutline } from "react-icons/io5";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import { Sidebar } from "./index";
+import { useSidebarContext } from "../context/sidebarContext";
 const Navbar = ({ title }) => {
+  const { isSidebarOpen, openSidebar } = useSidebarContext();
+  // console.log("@@@sidebar", isSidebarOpen);
+
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -36,9 +40,9 @@ const Navbar = ({ title }) => {
       <h5 className="text-white font-bold text-xl tracking-wide capitalize">
         {title}
       </h5>
-      <div className="text-white text-xl">
+      <button className="text-white text-xl" onClick={() => openSidebar()}>
         <AiOutlineMenu />
-      </div>
+      </button>
     </div>
   );
 };

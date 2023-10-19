@@ -63,7 +63,7 @@ export const fetchSingleAudio = (dispatch, id) => {
       const audioId = singleAudio.find((audio) => {
         // console.log("@@@audio.id", audio.id);
 
-        return audio.id === id;
+        return audio.id === +id;
       });
       if (audioId) {
         dispatch({ type: FETCH_SINGLE_AUDIO_SUCCESS, payload: audioId });

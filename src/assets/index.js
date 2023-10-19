@@ -21,6 +21,7 @@ import seine_1 from "./Galary/seine-1.jpg";
 import seine_2 from "./Galary/seine-2.jpg";
 import seine_3 from "./Galary/seine-3.jpg";
 import audio from "./audio/audio.mp3";
+
 export {
   paris,
   english,

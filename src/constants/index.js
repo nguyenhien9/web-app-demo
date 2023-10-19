@@ -36,7 +36,10 @@ export const languages = [
   { id: "jp", lang: "Japanese", icon: japanese },
   { id: "thai", lang: "Thailand", icon: thai },
 ];
-
+export const navLinks = [
+  { id: "tours", text: "Tours", path: "/tours" },
+  { id: "lang", text: "Language", path: "/langs" },
+];
 export const tours = [
   {
     id: "notre_1",
@@ -51,7 +54,7 @@ export const tours = [
     desc: "Notre-Dame de Paris is a Roman Catholic cathedral in Paris, France. The church’s name means “Our Lady of Paris” in French. Also known as Notre-Dame Cathedral, it is the most famous of the Gothic cathedrals of the Middle Ages and is distinguished for its size, antiquity, and architectural interest.",
     audioLists: [
       {
-        id: "audio_1",
+        id: 101,
         title: "POI title 1",
         thumb: notre,
         src: audio,
@@ -59,7 +62,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_2",
+        id: 102,
         title: "POI title 2",
         thumb: notre,
         src: audio,
@@ -67,7 +70,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_3",
+        id: 103,
         title: "POI title 3",
         thumb: notre,
         src: audio,
@@ -75,7 +78,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_4",
+        id: 104,
         title: "POI title 4",
         thumb: notre,
         src: audio,
@@ -83,7 +86,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_5",
+        id: 105,
         title: "POI title 5",
         thumb: notre,
         src: audio,
@@ -91,7 +94,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_6",
+        id: 106,
         title: "POI title 6",
         thumb: notre,
         src: audio,
@@ -99,7 +102,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_7",
+        id: 107,
         title: "POI title 7",
         thumb: notre,
         src: audio,
@@ -107,7 +110,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_8",
+        id: 108,
         title: "POI title 8",
         thumb: notre,
         src: audio,
@@ -115,7 +118,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_9",
+        id: 109,
         title: "POI title 9",
         thumb: notre,
         src: audio,
@@ -135,7 +138,7 @@ export const tours = [
     ],
     audioLists: [
       {
-        id: "audio_1",
+        id: 101,
         title: "POI title 1",
         thumb: notre,
         src: audio,
@@ -143,7 +146,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_2",
+        id: 102,
         title: "POI title 2",
         thumb: notre,
         src: audio,
@@ -151,7 +154,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_3",
+        id: 103,
         title: "POI title 3",
         thumb: notre,
         src: audio,
@@ -159,7 +162,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_4",
+        id: 104,
         title: "POI title 4",
         thumb: notre,
         src: audio,
@@ -167,7 +170,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_5",
+        id: 105,
         title: "POI title 5",
         thumb: notre,
         src: audio,
@@ -175,7 +178,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_6",
+        id: 106,
         title: "POI title 6",
         thumb: notre,
         src: audio,
@@ -183,7 +186,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_7",
+        id: 107,
         title: "POI title 7",
         thumb: notre,
         src: audio,
@@ -191,7 +194,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_8",
+        id: 108,
         title: "POI title 8",
         thumb: notre,
         src: audio,
@@ -199,7 +202,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_9",
+        id: 109,
         title: "POI title 9",
         thumb: notre,
         src: audio,
@@ -221,7 +224,7 @@ export const tours = [
     ],
     audioLists: [
       {
-        id: "audio_1",
+        id: 101,
         title: "POI title 1",
         thumb: notre,
         src: audio,
@@ -229,64 +232,64 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 102,
+        title: "POI title 2",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 103,
+        title: "POI title 3",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 104,
+        title: "POI title 4",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 105,
+        title: "POI title 5",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 106,
+        title: "POI title 6",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 107,
+        title: "POI title 7",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 108,
+        title: "POI title 8",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 109,
+        title: "POI title 9",
         thumb: notre,
         src: audio,
         scripts:
@@ -307,7 +310,7 @@ export const tours = [
     ],
     audioLists: [
       {
-        id: "audio_1",
+        id: 101,
         title: "POI title 1",
         thumb: notre,
         src: audio,
@@ -315,64 +318,64 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 102,
+        title: "POI title 2",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 103,
+        title: "POI title 3",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 104,
+        title: "POI title 4",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 105,
+        title: "POI title 5",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 106,
+        title: "POI title 6",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 107,
+        title: "POI title 7",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 108,
+        title: "POI title 8",
         thumb: notre,
         src: audio,
         scripts:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_1",
-        title: "POI title 1",
+        id: 109,
+        title: "POI title 9",
         thumb: notre,
         src: audio,
         scripts:
@@ -395,7 +398,7 @@ export const tours = [
     desc: "Notre-Dame de Paris is a Roman Catholic cathedral in Paris, France. The church’s name means “Our Lady of Paris” in French. Also known as Notre-Dame Cathedral, it is the most famous of the Gothic cathedrals of the Middle Ages and is distinguished for its size, antiquity, and architectural interest.",
     audioLists: [
       {
-        id: "audio_1",
+        id: 101,
         title: "POI title 1",
         thumb: notre,
         src: audio,
@@ -403,7 +406,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_2",
+        id: 102,
         title: "POI title 2",
         thumb: notre,
         src: audio,
@@ -411,7 +414,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_3",
+        id: 103,
         title: "POI title 3",
         thumb: notre,
         src: audio,
@@ -419,7 +422,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_4",
+        id: 104,
         title: "POI title 4",
         thumb: notre,
         src: audio,
@@ -427,7 +430,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_5",
+        id: 105,
         title: "POI title 5",
         thumb: notre,
         src: audio,
@@ -435,7 +438,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_6",
+        id: 106,
         title: "POI title 6",
         thumb: notre,
         src: audio,
@@ -443,7 +446,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_7",
+        id: 107,
         title: "POI title 7",
         thumb: notre,
         src: audio,
@@ -451,7 +454,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_8",
+        id: 108,
         title: "POI title 8",
         thumb: notre,
         src: audio,
@@ -459,7 +462,7 @@ export const tours = [
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       },
       {
-        id: "audio_9",
+        id: 109,
         title: "POI title 9",
         thumb: notre,
         src: audio,

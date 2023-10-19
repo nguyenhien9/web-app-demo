@@ -4,11 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { TourProvider } from "./context/tourContext";
+import { SidebarProvider } from "./context/sidebarContext";
+import { I18nextProvider } from "react-i18next";
+import "./i18n/i18n";
+import i18n from "./i18n/i18n";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <TourProvider>
-    <App />
+    <I18nextProvider i18n={i18n}>
+      <SidebarProvider>
+        <App />
+      </SidebarProvider>
+    </I18nextProvider>
   </TourProvider>
 );
 
