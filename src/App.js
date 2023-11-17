@@ -8,7 +8,6 @@ import {
   AudioPage,
   TourDetailPage,
 } from "./pages";
-import { Sidebar } from "./components";
 
 function App() {
   <h1>Hello</h1>;
@@ -16,7 +15,6 @@ function App() {
     <Suspense fallback="Loading...">
       <BrowserRouter>
         <div className="relative h-screen max-w-lg mx-auto">
-          <Sidebar />
           <Routes>
             <Route path="/" element={<LaunchPage />} />
             <Route path="/langs" element={<LanguagesSelectPage />} />

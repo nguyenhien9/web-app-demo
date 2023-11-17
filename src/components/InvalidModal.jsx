@@ -12,7 +12,7 @@ const customStyles = {
     borderRadius: "5px",
   },
 };
-
+Modal.setAppElement("#root");
 const InvalidModal = ({ open, close }) => {
   return (
     <Modal

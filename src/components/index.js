@@ -11,7 +11,7 @@ import IntroductionModal from "./IntroductionModal";
 import CustomSlider from "./CustomSlider";
 import CustomList from "./CustomList";
 import CustomKeyboard from "./CustomKeyboard";
-import Sidebar from "./Sidebar";
+
 import SingleAudio from "./SingleAudio";
 import InvalidModal from "./InvalidModal";
 
@@ -30,6 +30,5 @@ export {
   CustomList,
   CustomKeyboard,
   SingleAudio,
-  Sidebar,
-  InvalidModal
+  InvalidModal,
 };
